@@ -1,5 +1,0 @@
-Host github.com
-	HostName github.com
-	user DenisPotozky
-	IdentityFile C:\Users\vakom\.ssh\id_ed25519
-	IdentitiesOnly yes
