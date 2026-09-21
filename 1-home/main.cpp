@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
+SetConsoleOutputCP(65001);
 
 int main() {
 	std::cout << "Введите приветствие: ";
