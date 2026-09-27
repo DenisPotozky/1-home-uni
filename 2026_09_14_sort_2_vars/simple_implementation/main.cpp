@@ -1,4 +1,6 @@
 #include <iostream>
+#include "sortings.hpp"
+#include "io.hpp"
 #include <windows.h>
 void my_sort(int* arr, const int size);
 using namespace std;
@@ -16,34 +18,12 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		old_arr[i] = arr[i];
 	}
-	my_sort(arr, n); // вызывается алгоритм сортировки
-	cout << "Первоначальный массив:" << endl;
-	for (int i = 0; i < n; i++) {
-		cout << old_arr[i] << " ";
-	}
-	cout << endl;
-	cout << "Сортированный массив:" << endl;
-	for (int i = 0; i < n; i++) {
-		cout << arr[i] << " ";
-	}
+	biv::my_sort(arr, n); // вызывается алгоритм сортировки
+	biv::print_array(old_arr, arr, n);
 	cout << endl;
 	cout << "Нажмите Enter для закрытия";
 	cin.ignore();
 	cin.get();
 	delete[] arr;
 	delete[] old_arr;
-}
-
-void my_sort(int* arr, const int size) {
-	int n = size;
-	while (n > 0) { // использую bubble sort
-		for (int i = 0; i < size - 1; i++) {
-			if (arr[i] < arr[i + 1]) {
-				int x = arr[i + 1];
-				arr[i + 1] = arr[i];
-				arr[i] = x;
-			}
-		}
-		n--;
-	}
 }
