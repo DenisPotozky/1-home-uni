@@ -1,8 +1,6 @@
 //---------------------------------------------------------------------------
-#include <iostream>
-
 #include <cmath>
-
+#include <iostream>
 #include <windows.h>
 
 #pragma hdrstop
@@ -11,18 +9,18 @@
 
 #pragma argsused
 
-void create_array_of_digits(int num, int arr[]);
+void put_digits_in_array(int num, int arr[]);
 void print_in_latin(int arr[]);
 
 int main() { 
     SetConsoleOutputCP(CP_UTF8);
     
     int year;
-    std::cout << "Введите год" << std::endl;
+    std::cout << "Введите год от 1000 до 4999" << std::endl;
     std::cin >> year;
 
     int arr[4]{};
-    create_array_of_digits(year,arr);
+    put_digits_in_array(year,arr);
 
     print_in_latin(arr);
 
@@ -37,6 +35,8 @@ void print_in_latin(int arr[]) {
     char hundreds[9][5] = { "C","CC","CCC","CD","D","DC","DCC","DCCC","CM" };
     char tens[9][5] = { "X","XX","XXX","XL","L","LX","LXX","LXXX","XC" };
     char ones[9][5] = { "I","II","III","IV","V","VI","VII","VIII","IX" };
+
+    std::cout << "Год в латинских цифрах:" << std::endl;
 
     int i;
     for (i = 0; i < 4; i++)
@@ -54,8 +54,7 @@ void print_in_latin(int arr[]) {
     std::cout << std::endl;
 }
 
-void create_array_of_digits(int num, int arr[]) {
-    
+void put_digits_in_array(int num, int arr[]) {
     int i = 0;
 
     while (num != 0) {
