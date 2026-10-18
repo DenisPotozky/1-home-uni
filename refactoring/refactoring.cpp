@@ -55,6 +55,7 @@ void print_in_latin(int arr[]) {
 }
 
 void put_digits_in_array(int num, int arr[]) {
+    
     int i = 0;
 
     while (num != 0) {
