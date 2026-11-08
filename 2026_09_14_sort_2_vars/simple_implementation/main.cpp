@@ -1,11 +1,11 @@
 #include <iostream>
 #include "sortings.hpp"
 #include "io.hpp"
-#include <windows.h>
 void my_sort(int* arr, const int size);
+
 using namespace std;
+
 int main() {
-	SetConsoleOutputCP(CP_UTF8);
 	int n; // n - размер массива
 	cout << "Введите размер массива:" << endl;
 	cin >> n;
