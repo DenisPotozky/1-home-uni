@@ -1,7 +1,6 @@
 //---------------------------------------------------------------------------
 #include <cmath>
 #include <iostream>
-#include <windows.h>
 
 #pragma hdrstop
 
@@ -13,7 +12,6 @@ void put_digits_in_array(int num, int arr[]);
 void print_in_latin(int arr[]);
 
 int main() { 
-    SetConsoleOutputCP(CP_UTF8);
     
     int year;
     std::cout << "Введите год от 1000 до 4999" << std::endl;

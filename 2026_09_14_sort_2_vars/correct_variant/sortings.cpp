@@ -1,5 +1,23 @@
+#include <iostream>
 #include "sortings.hpp"
 
-void biv::bubble_sort(int* const arr, const int size) {
-	// TODO
+namespace biv {
+	void my_sort(int* arr, const int size) {
+		int n = size;
+		while (n > 0) {
+			for (int i = 0; i < size - 1; i++) {
+
+				if (arr[i] < arr[i + 1]) {
+
+					int x = arr[i + 1];
+
+					arr[i + 1] = arr[i];
+					arr[i] = x;
+
+				}
+
+			}
+			n--;
+		}
+	}
 }

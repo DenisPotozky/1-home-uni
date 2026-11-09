@@ -1,8 +1,5 @@
-#ifndef SORTINGS_HPP
-#define SORTINGS_HPP
+#pragma once
 
 namespace biv {
-	void my_sort(int* const arr, const int size);
+	void my_sort(int* arr, const int size);
 }
-
-#endif
