@@ -65,36 +65,60 @@ void uni1() {
 
 void uni2() {
 	std::cout << "Вы выбрали ИТМО" << std::endl;
+	
+	std::cout << "Нажмите Enter, чтобы выйти из программы  ";
+	std::cin.ignore();
 	std::cin.get();
+
 	exit(0);
 }
 
 void uni3() {
 	std::cout << "Вы выбрали Политех" << std::endl;
+
+	std::cout << "Нажмите Enter, чтобы выйти из программы  ";
+	std::cin.ignore();
 	std::cin.get();
+
 	exit(0);
 }
 
 void uni4() {
 	std::cout << "Вы выбрали ЛЭТИ" << std::endl;
+
+	std::cout << "Нажмите Enter, чтобы выйти из программы  ";
+	std::cin.ignore();
 	std::cin.get();
+
 	exit(0);
 }
 
 void fac1() {
 	std::cout << "Вы выбрали ПМ-ПУ!" << std::endl;
+
+	std::cout << "Нажмите Enter, чтобы выйти из программы  ";
+	std::cin.ignore();
 	std::cin.get();
+
 	exit(0);
 }
 
 void fac2() {
 	std::cout << "Вы выбрали МатМех!" << std::endl;
+
+	std::cout << "Нажмите Enter, чтобы выйти из программы  ";
+	std::cin.ignore();
 	std::cin.get();
+
 	exit(0);
 }
 
 void fac3() {
 	std::cout << "Вы выбрали Лингвистику!" << std::endl;
+
+	std::cout << "Нажмите Enter, чтобы выйти из программы  ";
+	std::cin.ignore();
 	std::cin.get();
+
 	exit(0);
 }

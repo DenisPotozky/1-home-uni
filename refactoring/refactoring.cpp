@@ -2,17 +2,10 @@
 #include <cmath>
 #include <iostream>
 
-#pragma hdrstop
-
-//---------------------------------------------------------------------------
-
-#pragma argsused
-
-void put_digits_in_array(int num, int arr[]);
 void print_in_latin(int arr[]);
+void put_digits_in_array(int num, int arr[]);
 
 int main() { 
-    
     int year;
     std::cout << "Введите год от 1000 до 4999" << std::endl;
     std::cin >> year;
@@ -22,8 +15,7 @@ int main() {
 
     print_in_latin(arr);
 
-    system("pause");
-            return 0;
+    return 0;
 }
 //---------------------------------------------------------------------------
  
